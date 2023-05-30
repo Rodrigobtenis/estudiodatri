@@ -1,0 +1,645 @@
+*{
+  padding: 0
+  ;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(22, 21, 21);
+
+}
+#header{
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  align-items: center;
+  
+  }
+
+ .logoestudio img {
+    
+    width: 10%;
+  }
+.menu ul{
+  display: flex;
+  }
+
+  .menu ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 0 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold
+    ;
+  }
+
+  .menu ul li a:hover{
+    background-color: #efe5e5;
+  }
+
+
+
+  #imagenPortada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    background-color: #0b0b0b;
+  }
+  
+  #imagenPortada img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+div h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+
+.contenedorpadre{
+  background-color: #000000;
+  padding: 20px;
+  display: flex;
+  gap: 25px;
+  flex-direction:row;
+  
+
+
+
+}
+
+.contenedorhijo img{
+  width: 100%;
+  height: auto;
+  border-radius: 15%;
+}
+
+.contenedorhijo a p{
+  font-size: 120%;
+  color: white;
+  text-align: center;
+
+}
+
+.contenedorhijo a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+#hr {
+  color: rgb(255, 255, 255);
+}
+
+#mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.texto #donde {
+  font-size: 266%;
+  font-family: 'Playfair Display', serif;
+  flex: 1;
+  text-align: center ;
+  
+}
+
+#Avenida{
+  font-size: 193%;
+}
+
+
+
+
+.footer {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 250%;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Playfair Display', serif;
+}
+#dejanos {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 180%;
+  text-align: center;
+  margin-bottom: 2%;
+ }
+
+#dejanos a{
+  text-decoration: none;
+  color: white;
+}
+
+
+  .flota{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.flota img{
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
+.flota:hover{
+	background-color:#009688;
+	box-shadow: 2px 2px 3px #999;
+	transform: rotate(360deg);
+	transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .logoestudio img {
+  width: 30%;
+  }
+  
+  .menu ul li a {
+  margin: 0 15px;
+  padding: 10px;
+
+  }
+  
+  #imagenPortada img{
+
+  padding: 1%;
+  width: 720px;
+
+
+  }
+  
+  div h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  }
+  
+  .contenedorpadre {
+  gap: 10px;
+  }
+  
+  .contenedorhijo a p {
+  font-size: 14px;
+  }
+  
+  #mapa iframe  {
+  padding: 20px;
+  }
+
+ 
+  
+  .texto #donde {
+  font-size: 24px;
+  }
+  
+  #Avenida {
+  font-size: 18px;
+  }
+  
+  .footer {
+  font-size: 24px;
+  }
+  
+  #dejanos {
+  font-size: 22px;
+  }
+  }
+
+
+
+
+
+/* a partir de aca NUESTROS SERVICIOS */
+
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.todoservicios{
+  padding: 50px;
+  
+}
+
+h3 {
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Montserrat', sans-serif;
+  }
+
+.gridnuevo{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #0b0c0c;
+row-gap: 5px 
+ ;
+padding: 10px;
+justify-items: center;
+gap: 50px;
+align-items: center;
+padding-top: 50px;
+
+
+}
+
+
+
+
+.column img {
+  width: 190px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+  justify-content: center;
+  align-self: center;
+
+  
+  
+
+}
+
+.column{
+  display: grid;
+  align-self: center;
+  justify-content: center;
+}
+.column p{
+  font-size: 1em;
+  ;width: 100%;
+  max-width: 100%;
+  height: auto;
+ 
+  
+  
+  
+}
+
+#info {
+text-align: center;
+font-size: 200%;
+margin-bottom: 1%;
+padding: 3%;
+color: white;
+font-family: 'Montserrat', sans-serif;
+
+
+
+}
+
+#info a{
+  color: white;
+  text-decoration: none;
+  
+
+}
+
+.grid-contenedor2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  background-color: #bca48e;
+  justify-items: start;
+  align-items: start;
+  padding: 20px;
+  border-radius: 0px;
+
+  
+
+
+
+
+ 
+}
+
+.grid-item1{
+ border: solid; 
+ padding: 10px;
+ 
+ border-width: 1px;
+ border-color: white;
+
+}
+
+.grid-item2{
+  border: solid; 
+ padding: 10px;
+
+ border-width: 1px;
+ border-color: white;
+}
+
+.grid-item3{
+  border: solid; 
+ padding: 10px;
+ 
+ border-width: 1px;
+ border-color: white;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .todoservicios {
+    padding: 30px;
+  }
+  
+  h3 {
+    font-size: 200%;
+  }
+  
+  .gridnuevo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #0b0c0c;
+    row-gap: 5px;
+    padding: 10px;
+    justify-items: center;
+    gap: 15px;
+    align-items: center;
+    padding-top: 30px;
+  }
+  
+  .column img {
+    width: 150px;
+  }
+  
+  .column p {
+    font-size: 1em;
+  }
+  
+  #info {
+    font-size: 150%;
+    margin-bottom: 1%;
+    padding: 3%;
+  }
+  
+  .grid-contenedor2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    background-color: #bca48e;
+    justify-items: start;
+    align-items: start;
+    padding: 15px;
+    border-radius: 3px;
+    
+  }
+  
+  .grid-item1,
+  .grid-item2,
+  .grid-item3 {
+    padding: 10px;
+  
+
+
+  }
+  .grid-contenedor2 p{
+    line-height: 1.2;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* a partir de aca QUIENES SOMOS */
+
+
+
+
+#quienes h3 {
+  color: rgb(237, 246, 246);
+}
+
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  flex-basis: 40%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.text-container {
+  flex-basis: 60%;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-size: 20px;
+  line-height: 2.1;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+}
+.text-container p{
+  font-size: 20px;
+  line-height: 1.1;
+
+}
+
+.grilla-colab{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 10px;
+  
+}
+.grilla-colab img{
+  width: 100%;
+  border-radius: 39px;
+}
+  .grilla-colab .parrafo2{
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+@media (min-width: 768px){
+.grilla-colab{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 100px;
+}
+.grilla-colab img{
+  width: 100%;
+}
+  .grilla-colab div p{
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .text-container p{
+    font-size: 20px;
+    line-height: 1.1;
+  
+  }
+  .grilla-colab .parrafo2{
+    font-size: 15px;
+  }
+}
+
+
+/* a partir de aca DEJANOS TU CONSULTA */
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container img {
+  width: 50%;
+  
+  ;
+}
+
+form {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+ margin-bottom: 20px;
+}
+
+textarea {
+  height: 150px;
+}
+
+input {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+/* a partir de aca NUESTROS CURSOS */
+
+
+.fila {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.columna {
+	flex: 5;
+padding: 20px;
+	text-align: center;
+}
+
+.columna img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	border-radius: 20px;
+}
+
+.columna p {
+	text-align: center;
+  line-height: 20px;
+}
+
+body {
+	background-color: #000;
+	color: #FFF;
+	font-family: 'Playfair Display', serif;
+  
+}
+
+#cursos2{
+  font-size: 150%;
+  background-color: #150202;
+  border-radius: 150%;
+  margin: 1%;
+}
+
+
+
