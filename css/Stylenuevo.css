@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(22, 21, 21);
+  background-color: rgb(0, 0, 0);
 
 }
 #header{
@@ -60,6 +60,9 @@ div h2 {
   margin-top: 50px;
   text-align: center;
   color: white;
+  background-color: #000;
+  margin: -0.5%;
+
 }
 
 
@@ -101,6 +104,9 @@ div h2 {
 
 #hr {
   color: rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: -1px;
+  background-color: #000;
 }
 
 #mapa {
@@ -149,11 +155,14 @@ div h2 {
   font-size: 180%;
   text-align: center;
   margin-bottom: 2%;
+  background-color: rgb(0, 0, 0);
+
+ 
  }
 
 #dejanos a{
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 
@@ -206,7 +215,7 @@ div h2 {
   
   div h2 {
   font-size: 24px;
-  margin-top: 30px;
+  margin-top: 0px;
   }
   
   .contenedorpadre {
@@ -238,6 +247,7 @@ div h2 {
   #dejanos {
   font-size: 22px;
   }
+  
   }
 
 
