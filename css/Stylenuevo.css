@@ -480,7 +480,7 @@ padding: 5px;
 .navbar{
   font-family: 'Josefin Sans', sans-serif;
   gap: 32px;
-  margin: auto;
+ 
 
 
 }
@@ -677,5 +677,11 @@ body {
   margin: 1%;
 }
 
-
+@media (max-width: 768px) {
+  .columna {
+    flex: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+}
 
