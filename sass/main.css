@@ -97,7 +97,7 @@ div h2 {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 50px;
+  gap: 8px;
   margin: 0px;
   justify-content: space-between;
 }
@@ -122,7 +122,7 @@ div h2 {
 
 .contenedorhijo img:hover {
   transform: scale(1.1);
-  transition: 1.5s;
+  transition: 2s;
 }
 
 .contenedorhijo a {
@@ -520,6 +520,13 @@ div h2 {
     padding: 22px;
     margin-top: 0;
   }
+  .contenido {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+  }
 }
 /* a partir de aca NUESTROS SERVICIOS */
 body {
@@ -833,7 +840,7 @@ input[type=submit]:hover {
 }
 
 body {
-  background-color: #000;
+  background-color: #C7B0A7;
   color: #FFF;
   font-family: "Playfair Display", serif;
 }
