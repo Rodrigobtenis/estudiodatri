@@ -475,7 +475,9 @@ transition: 2s;
 	@media screen and (max-width: 768px) {
 	
 
-
+.logoestudio4{
+	width: 100px;
+}
 .logo-mobile {
 	width: 50px;
 	margin: 0 15px;
@@ -517,6 +519,8 @@ div h2 {
 
 	
 }
+
+
 
 .contenedorhijo a p{
 	font-size: 23px;
@@ -749,7 +753,7 @@ h3 {
 
 .navbar {
 	font-family: 'Josefin Sans', sans-serif;
-	gap: 32px;
+	gap: -8px;
 }
 #quienes h3 {
 	color: rgb(237, 246, 246);
