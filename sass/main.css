@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -602,7 +603,8 @@ div h2 {
   font-size: 200%;
   color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
-  background-color: black;
+  background-color: rgb(205, 178, 178);
+  box-sizing: border-box;
 }
 .info-nuestros a {
   color: rgb(255, 255, 255);
@@ -618,7 +620,7 @@ div h2 {
   display: flex;
   gap: 20px;
   background-color: #ece4e1;
-  margin: 20px;
+  margin: 75px;
 }
 .grid-contenedor2 .grid-item1 {
   border: solid;
@@ -644,7 +646,7 @@ div h2 {
     flex-direction: column;
     align-items: center;
     background-color: rgb(240, 232, 232);
-    margin: 48px;
+    margin: 20px;
   }
   .imagen-nuestros {
     width: 100%;
@@ -856,6 +858,32 @@ input[type=submit]:hover {
 }
 
 /* a partir de aca NUESTROS CURSOS */
+.titulo-parrafo {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+  margin: 50px;
+  padding: 16px;
+}
+
+.titulo-titulo {
+  font-family: "Marck Script", cursive;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+}
+.paragraph p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
 .fila {
   display: flex;
   flex-wrap: wrap;
@@ -879,15 +907,52 @@ input[type=submit]:hover {
 
 #cursos2 {
   font-size: 150%;
-  background-color: #150202;
-  border-radius: 150%;
-  margin: 1%;
+  background-color: #ffffff;
 }
 
 @media (max-width: 768px) {
+  .nuestros-cursos-colores {
+    background-color: #eae3e0;
+  }
   .columna {
     flex: 100%;
     padding: 10px;
     text-align: center;
+  }
+  .titulo-parrafo {
+    margin: 15px;
+  }
+  .titulo-parrafo .paragraph p {
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  #cursos2 h2 {
+    font-size: 100%;
+    background-color: #eae3ef;
+    color: #000;
+  }
+  .fila {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+  }
+  .columna {
+    flex: 5;
+    padding: 20px;
+    text-align: center;
+  }
+  .columna img {
+    max-width: 70%;
+  }
+  .columna p {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    line-height: 15px;
+    font-size: 15px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #cab9b4;
+    margin-top: 10px;
+    margin: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
