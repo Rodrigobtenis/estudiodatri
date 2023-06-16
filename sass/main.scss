@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 
 
@@ -152,6 +153,7 @@ div h2 {
 .contenedorhijo img {
 	width: 100%;
 	max-width: 100%;
+	transition: opacity 0.3s ease;
 	}
 
 	.texto-abajo-imagen{
@@ -171,9 +173,8 @@ div h2 {
 
 
 .contenedorhijo img:hover{
-transform: scale(1.1);
-transition: 2s;
 
+opacity: 0.5;
 }
 
 .contenedorhijo a {
@@ -664,7 +665,7 @@ div h2 {
 	  
 	  p {
 		font-family: sans-serif;
-		font-size: 19px;
+		font-size: 20px;
 	  }
   }
   
@@ -763,6 +764,10 @@ div h2 {
 		}
 	  }
 	  
+	  .content p {
+		font-size: 15px;}
+
+
 	  .content {
 		width: 100%;
 		padding: 20px;
@@ -777,10 +782,7 @@ div h2 {
 		color: #6b0a0a;
 	  }
 	  
-	  p {
-		font-family: sans-serif;
-		font-size: 19px;
-	  }
+	 
 
 	  .info-nuestros {
 		text-align: center;
@@ -819,7 +821,7 @@ div h2 {
 	  
 		  p {
 			padding: 6px;
-			font-size: 20px;
+			font-size: 15px;
 		  }
 		}
 	  }
@@ -856,11 +858,10 @@ div h2 {
 	font-family: 'Josefin Sans', sans-serif;
 	gap: -8px;
 }
-#quienes h3 {
-	color: rgb(237, 246, 246);
-}
+
+
 .container {
-	background-color: black;
+	background-color: rgb(85, 47, 47);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -922,6 +923,9 @@ div h2 {
 	}
 }
 @media (min-width: 768px) {
+
+
+
 	.grilla-colab {
 		display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -1015,6 +1019,7 @@ $primary-color: #333;
   margin-bottom: 20px;
 
   p {
+	font-family: "Josefin Sans", sans-serif;
     font-size: 18px;
     color: $primary-color;
     line-height: 1.5;
@@ -1026,6 +1031,7 @@ $primary-color: #333;
 .fila {
 	display: flex;
 	flex-wrap: wrap;
+	background-color: #eae3e0;
 }
 .columna {
 	flex: 5;
@@ -1040,13 +1046,19 @@ $primary-color: #333;
 	p {
 		text-align: center;
 		line-height: 20px;
+		border: solid;
+		border-width: 1px;
+		border-color: #d8cdc9 ;
+		border-radius: 20px;
 	}
 }
 
 
-#cursos2 {
-	font-size: 150%;
+#cursos2 h2{
+	font-size: 35px;
 	background-color: #ffffff;
+	color: #000;
+	margin-bottom: 20px;
 	
 }
 @media (max-width: 768px) {
@@ -1073,9 +1085,10 @@ $primary-color: #333;
 
 #cursos2
  h2 {
-	font-size: 100%;
-	background-color: #eae3ef;
+	font-size: 20px;
+	background-color: #eae3e0;
 	color: #000;
+	margin-top: 20px;
 	}
 	.fila {
 		display: grid;
