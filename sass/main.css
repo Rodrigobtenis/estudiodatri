@@ -782,92 +782,120 @@
   z-index: -1;
 }
 
-.grilla-colab {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+.contenedor-quienes {
+  display: flex;
+  width: 100%;
+}
+.contenedor-quienes .contenedor-imagenes {
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedor-quienes .contenedor-imagenes .imagen-con-texto {
+  flex-basis: 33.33%;
+  text-align: start;
   padding: 10px;
 }
-.grilla-colab img {
-  width: 100%;
-  border-radius: 39px;
-}
-.grilla-colab .parrafo2 {
-  font-size: 20px;
-  line-height: 1.2;
-}
-.grilla-colab img {
+.contenedor-quienes .contenedor-imagenes .imagen-con-texto img {
   width: 100%;
 }
-.grilla-colab div p {
-  font-size: 10px;
-  line-height: 1.2;
+.contenedor-quienes .imagen-sola {
+  flex-basis: 50%;
 }
-.grilla-colab .parrafo2 {
-  font-size: 15px;
+.contenedor-quienes .imagen-sola img {
+  width: 100%;
+  height: auto;
 }
 
-@media (min-width: 768px) {
-  .grilla-colab {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 100px;
+.ver-mas-btn {
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contenedor-total-quienes .container-quienes {
+    margin: 0;
+  }
+  .contenedor-total-quienes .container-quienes .title-quienes {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .contenedor-total-quienes .container-quienes .row-quienes {
+    flex-wrap: wrap;
+  }
+  .contenedor-total-quienes .container-quienes .row-quienes .column-quienes {
+    flex-basis: 100%;
+  }
+  .contenedor-total-quienes .container-quienes .text-quienes {
+    display: none;
+  }
+  .contenedor-quienes {
     flex-direction: column;
+  }
+  .contenedor-quienes .contenedor-imagenes {
+    flex-basis: 100%;
+  }
+  .contenedor-quienes .contenedor-imagenes .imagen-con-texto {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 30px;
+  }
+  .contenedor-quienes .contenedor-imagenes .imagen-con-texto:first-child {
+    display: none;
+  }
+  .contenedor-quienes .imagen-sola {
+    flex-basis: 100%;
+    margin-top: 20px;
   }
 }
 /* a partir de aca DEJANOS TU CONSULTA */
-.medejas {
-  padding: 23px;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.form-container img {
-  width: 50%;
-}
-
-form {
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input[type=text], input[type=email], input[type=tel], select, textarea {
+.contenedor-acordeon {
   width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 80px;
+}
+.contenedor-acordeon h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 35px;
 }
 
-textarea {
-  height: 150px;
+.acordeon {
+  background: #fff;
 }
-
-input {
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
+.acordeon label {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  background: #1c1c1c;
+  color: #fff;
   cursor: pointer;
+  margin-bottom: 2px;
+  transition: all 300ms ease;
 }
-input[type=submit]:hover {
-  background-color: black;
-  color: white;
+.acordeon .contenido-acordeon {
+  padding: 0px;
+  margin: 0px 20px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.acordeon label:hover {
+  background: #2e2e2e;
+}
+
+.btn-acordeon:checked ~ .contenido-acordeon {
+  max-height: 600px;
+  padding: 15px 0px;
+}
+
+.btn-acordeon {
+  display: none;
 }
 
 /* a partir de aca NUESTROS CURSOS */
