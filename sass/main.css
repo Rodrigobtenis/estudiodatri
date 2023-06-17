@@ -177,6 +177,10 @@
     grid-gap: 30px;
     padding: 35px 0px;
   }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 }
 .todo-lo-de-adentro {
   background-color: #C7B0A7;
