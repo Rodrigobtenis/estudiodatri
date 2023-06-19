@@ -1017,6 +1017,7 @@
     max-width: 1300px;
     margin: auto;
     margin-top: 80px;
+	margin-bottom: 40px;
 	h2{
 		text-align: center;
 		font-size: 40px;
@@ -1025,13 +1026,13 @@
 }
 
 .acordeon{
-    background: #fff;
+    background: #f3eeee;
 	label{
 		display: block;
 		padding: 20px;
 		font-size: 20px;
-		background: #1c1c1c;
-		color: #fff;
+		background: #b19b9b;
+		color: #ffffff;
 		cursor: pointer;
 		margin-bottom: 2px;
 		transition: all 300ms ease;
@@ -1046,7 +1047,7 @@
 }
 
 .acordeon label:hover{
-    background: #2e2e2e;
+    background: #5c4040;
 }
 
 .btn-acordeon:checked ~ .contenido-acordeon{
@@ -1189,4 +1190,45 @@ $primary-color: #333;
 			margin: 10px;
 		}
 	}
+
+
+/* a partir de aca DEJANOS TU CONSULTA */
+
+.contenedor-acordeon{
+    width: 93%;
+    max-width: 1300px;
+    margin: auto;
+   margin: 20px;
+	h2{
+		text-align: center;
+		font-size: 30px;
+		margin-bottom: 35px;
+	}
+	p{
+		font-size: 13px;
+	}
+}
+
+.acordeon{
+    background: #f3eeee;
+	label{
+		display: block;
+		padding: 20px;
+		font-size: 15px;
+		background: #b19b9b;
+		color: #ffffff;
+		cursor: pointer;
+		margin-bottom: 2px;
+		transition: all 300ms ease;
+	}
+	.contenido-acordeon{
+		padding: 0px;
+		margin: 0px 20px;
+		max-height: 0px;
+		overflow: hidden;
+		transition: all 300ms ease;
+	}
+}
+
+
 }
