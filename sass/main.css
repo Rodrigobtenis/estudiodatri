@@ -739,47 +739,31 @@
   gap: -8px;
 }
 
-.contenedor-total-quienes {
+.container-total-quienes {
   display: flex;
+  height: 100%;
 }
 
-.container-quienes {
-  position: relative;
-  max-width: 100%;
-  margin: 30px;
-}
-.container-quienes .title-quienes {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  font-family: "Josefin Sans", sans-serif;
-}
-.container-quienes .row-quienes {
+.contenido-total-quienes {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
 }
-.container-quienes .row-quienes .column-quienes {
-  flex-basis: 48%;
-  margin-bottom: 20px;
+
+.image-contenedor-total-quienes {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
-.container-quienes .text-quienes {
-  font-family: "Josefin Sans", sans-serif;
-  margin: 20px;
-  font-size: 20px;
-}
-.container-quienes:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/foto-segunda-imagen-quienes.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.2;
-  z-index: -1;
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .contenedor-quienes {
@@ -799,56 +783,73 @@
 .contenedor-quienes .contenedor-imagenes .imagen-con-texto img {
   width: 100%;
 }
-.contenedor-quienes .imagen-sola {
-  flex-basis: 50%;
-}
-.contenedor-quienes .imagen-sola img {
-  width: 100%;
-  height: auto;
+
+.contenedor-abajo-total-quienes {
+  display: flex;
+  height: 100%;
 }
 
-.ver-mas-btn {
-  display: none;
-  text-align: center;
-  margin-top: 10px;
-  cursor: pointer;
+.contenido-abajo-total-quienes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.image-container-total-quienes {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title-quienes-abajo {
+  font-size: 25px;
+}
+
+.contenedor-total-total-quienes {
+  margin: 40px;
 }
 
 @media (max-width: 768px) {
-  .contenedor-total-quienes .container-quienes {
-    margin: 0;
-  }
-  .contenedor-total-quienes .container-quienes .title-quienes {
-    font-size: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-  .contenedor-total-quienes .container-quienes .row-quienes {
-    flex-wrap: wrap;
-  }
-  .contenedor-total-quienes .container-quienes .row-quienes .column-quienes {
-    flex-basis: 100%;
-  }
-  .contenedor-total-quienes .container-quienes .text-quienes {
-    display: none;
-  }
-  .contenedor-quienes {
+  .container-total-quienes {
     flex-direction: column;
   }
-  .contenedor-quienes .contenedor-imagenes {
+  .container-total-quienes .contenido-total-quienes,
+  .container-total-quienes .image-contenedor-total-quienes,
+  .container-total-quienes .contenedor-quienes,
+  .container-total-quienes .contenedor-abajo-total-quienes,
+  .container-total-quienes .contenido-abajo-total-quienes,
+  .container-total-quienes .image-container-total-quienes {
+    padding: 2px;
+  }
+  .container-total-quienes .contenedor-quienes .contenedor-imagenes {
     flex-basis: 100%;
   }
-  .contenedor-quienes .contenedor-imagenes .imagen-con-texto {
+  .container-total-quienes .contenedor-quienes .contenedor-imagenes .imagen-con-texto {
     flex-basis: 100%;
-    text-align: center;
-    padding: 30px;
+    padding: 5px;
   }
-  .contenedor-quienes .contenedor-imagenes .imagen-con-texto:first-child {
+  .container-total-quienes .contenedor-quienes .contenedor-imagenes .imagen-con-texto img {
+    width: 100%;
+  }
+  .container-total-quienes .contenedor-quienes .contenedor-imagenes .imagen-con-texto p {
+    margin-top: 5px;
+  }
+  .title-quienes-abajo {
+    font-size: 25px;
+    color: #000;
+  }
+  .contenido-oculto {
     display: none;
-  }
-  .contenedor-quienes .imagen-sola {
-    flex-basis: 100%;
-    margin-top: 20px;
   }
 }
 /* a partir de aca DEJANOS TU CONSULTA */
