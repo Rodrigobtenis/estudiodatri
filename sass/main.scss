@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 *{
     margin: 0;
@@ -28,7 +31,8 @@
 	text-align: center;
 	color: #7a7a7a;
 
-	h2{color: black;
+	h2{color: #444444;
+		font-family: "Marck Script", cursive;
 
 	}
 
@@ -197,7 +201,7 @@
 .navbar{
 	background: black
 	 !important;
-	 font-size: 20px;
+	 font-size: 15px;
 }
 
 .nav-link{
@@ -311,7 +315,7 @@
 #slider {
 	margin: 0 auto;
 	
-	max-width: 60%;
+	max-width: 30%;
 	text-align: center;
 	background-color: #C7B0A7;
 	padding: 0px;
@@ -363,6 +367,7 @@
 	align-items: center;
 	height: 100%;
 	color: #fff;
+	
 	
  }
 
@@ -438,6 +443,7 @@
  .nombre-slide1{
 	background-color: #C7B0A7 ;
 	text-decoration: underline;
+	font-size: 20px;
  }
  .nombre-slide2{
 	background-color: #C7B0A7;
@@ -496,13 +502,13 @@
 }
 
 .nombre-parrafo-slide{
-	font-size: 21px;
+	font-size: 15px;
 	line-height: 2.1;
 	margin-bottom: 20px;
 	font-family: 'Montserrat', sans-serif;
 }
 .nuestros-clientes-dicen{
-	font-size: 35px;
+	font-size: 25px;
 	font-family: 'Marck Script', cursive;
 	color: white;
 	padding: 10px;
@@ -551,7 +557,16 @@
 	padding: 10px;
 }
 
+#slider {
+	margin: 0 auto;
+	
+	max-width: 60%;
+	text-align: center;
+	background-color: #C7B0A7;
+	padding: 0px;
+	margin-top: 0
 
+ }
 
 .nombre-parrafo-slide{
 	font-size: 15px;
