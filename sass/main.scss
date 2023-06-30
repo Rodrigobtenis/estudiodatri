@@ -901,13 +901,14 @@
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	  }
+	
   }
   
-  img {
-	max-width: 100%;
-	max-height: 100%;
-  }
-
+  
   .contenedor-quienes {
 	display: flex;
 	width: 100%;
@@ -955,12 +956,13 @@
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	  }
   }
   
-  img {
-	max-width: 100%;
-	max-height: 100%;
-  }
+  
 
   .title-quienes-abajo{
 	font-size: 25px;
@@ -1161,50 +1163,256 @@ $primary-color: #333;
 
 
 
-.fila {
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #e9dfdb;
-}
-.columna {
-	flex: 5;
-	padding: 20px;
-	text-align: center;
+
+
+
+
+
+.slider-frame {
+	width: 900px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+	ul {
+		display: flex;
+		padding: 0;
+		width: 400%;
+		
+		animation: slide-carro 15s infinite alternate ease-in-out;
+	}
+	li {
+		width: 100%;
+		list-style: none;
+	}
 	img {
-		display: block;
-		margin: 0 auto;
-		max-width: 100%;
-		border-radius: 20px;
-	}
-	p {
-		text-align: center;
-		line-height: 20px;
-		border: solid;
-		border-width: 1px;
-		border-color: #d8cdc9 ;
-		border-radius: 20px;
+		width: 100%;
+
 	}
 }
 
 
-#cursos2 h2{
-	font-size: 35px;
-	background-color: #eae3e0;
-	color: #000;
-	margin-bottom: 20px;
+
+
+
+
+
+@keyframes slide-carro {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
 	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+
+
+// fdsfsdggfdgfgfgfdgfgfgfdgfgfgfdgfgfdg
+
+
+.carta-se-da-vuelta-total{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: white;
+	gap: 30px;
+	
+	}
+
+	.card-cursos-nuevo{
+		position: relative;
+		width: 300px;
+		height: 500px;}
+
+		.card-cursos-nuevo .face{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+			border-radius: 10px;
+			overflow: hidden;
+			transition: .5s;
+		}
+			
+		.card-cursos-nuevo .front{
+				transform: perspective(600px) rotateY(0deg);
+				box-shadow: 0 5px 10px black;
+
+			}
+			.card-cursos-nuevo .front img{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;}
+				
+				.card-cursos-nuevo .front h3{
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					height: 45px;
+					line-height: 45px;
+					color: white;
+					background: rgb(119, 97, 101);
+					text-align: center;
+				}
+			
+
+				.card-cursos-nuevo .back{
+					transform: perspective(600px) rotateY(180deg);
+					background-color: rgb(163, 126, 126);
+					padding: 15px;
+					color: white
+					;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					text-align: center;
+					box-shadow: 0 5px 10px black;
+
+				}
+				.card-cursos-nuevo .back .linkeable{
+					border-top: solid 1px white;
+					height: 50px;
+					line-height: 50px;	
+				}
+				.card-cursos-nuevo .back .linkeable a{
+					color: white;
+				}
+				
+			
+				.card-cursos-nuevo .back h3{
+					font-size: 30px;
+					margin-top: 20px;
+					letter-spacing: 2px;
+				}
+		
+				.card-cursos-nuevo .back p{
+					letter-spacing: 1px;
+				}
+	
+
+
+.card-cursos-nuevo:hover .front{
+	transform: perspective(600px) rotateY(180deg);
+
+}
+.card-cursos-nuevo:hover .back{
+	transform: perspective(600px) rotateY(360deg);
+}
+
+
+.conoce-nuestras{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	margin-top: 60px;
+	.conoce-nuestras-capa{
+		margin-top: 30px;
+		font-family: "Josefin Sans", sans-serif;
+		font-style: italic;
+		
+	}
+}
+
+@media (max-width: 768px) {
+
+	.conoce-nuestras{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		margin-top: 60px;
+		.conoce-nuestras-capa{
+			font-size: 15px;
+			margin-top: 30px ;
+			margin-bottom: 20px;
+			font-family: "Josefin Sans", sans-serif;
+			font-style: italic;
+			
+		}
+	}
+	.carta-se-da-vuelta-total {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	  min-height: 100vh;
+	  background-color: white;
+	  width: 100%;
+
+	  
+	}
+  
+	.card-cursos-nuevo {
+	  position: relative;
+	  width: 300px;
+	  height: 500px;
+	}
+  
+	
+  }
+
+
+
+
+
+
+
+
+
+#cursos2 {
+	display: flex;
+	justify-content: center;
+
+h2{
+	font-size: 35px;
+	color: #000;
+	margin-bottom: 15px;
+	font-family: "Josefin Sans", sans-serif;
+
+}
+.slide-carousel{
+	.carousel-item{
+		width: 10%;
+	}
+}
+
 }
 @media (max-width: 768px) {
+
+
+
+
+
+	
+	.slider-frame {
+		margin-top: 30px; 
+		max-width: 100%;
+		
+	}
+
+	ul {
+		width: 200%; 
+	}
+
+	li {
+		width: 50%; 
+	}
 
 .nuestros-cursos-colores{
 	background-color: #eae3e0;
 }
 
 
-	.columna {flex: 100%;
-	padding: 10px;
-	text-align: center;
-}
+	
 
 .titulo-parrafo{
 	margin:0 15px;
@@ -1216,38 +1424,7 @@ $primary-color: #333;
 
 
 
-#cursos2
- h2 {
-	font-size: 20px;
-	background-color: #eae3e0;
-	color: #000;
-	margin-top: 20px;
-	}
-	.fila {
-		display: grid;
-		grid-template-columns: 3, 1fr;
-	}
-	.columna {
-		flex: 5;
-		padding: 20px;
-		text-align: center;
-		img {
-		 max-width: 70%;
-			
-		}
-		p {
-			font-family: 'Josefin Sans', sans-serif;
-			text-align: center;
-			line-height: 15px;
-			font-size: 15px;
-			border: solid;
-			border-width: 1px;
-			border-radius: 10px;
-			border-color: #cab9b4;
-			margin-top: 10px;
-			margin: 10px;
-		}
-	}
+
 
 
 /* a partir de aca DEJANOS TU CONSULTA */
