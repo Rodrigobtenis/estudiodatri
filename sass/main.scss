@@ -447,14 +447,18 @@
  }
  .nombre-slide2{
 	background-color: #C7B0A7;
-	text-decoration: underline; }
+	text-decoration: underline;
+	font-size: 20px;
+ }
  .nombre-slide3{
 	background-color: #C7B0A7 ;
 	text-decoration: underline;
+	font-size: 20px;
  }
  .nombre-slide4{
 	background-color: #C7B0A7 ;
 	text-decoration: underline;
+	font-size: 20px;
  }
  @media screen and (max-width: 900px) {
 	#slide1:checked ~ #controls label:nth-child(2),
@@ -646,47 +650,44 @@
 /* a partir de aca NUESTROS SERVICIOS */
 
 
-
 .container-nuevo {
 	display: flex;
-	align-items:start;
-	background-color: rgb(240, 232, 232);
-	margin: 50px 50px;
-	
-
-	.imagen-nuestros{
-	width: 30%;
-	text-align: left;
-	
-	img {
-		width: 100%;
-		height: auto;
-
-		
-		
-	  }
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
   }
   
-}
+  .imagen-nuestros {
+	flex: 1;
+	max-width: 25%;
+	margin-right: 20px;
+  }
+  
+  .imagen-nuestros img {
+	width: 100%;
+	height: auto;
+  }
   
   .content {
-	width: 60%;
-	padding: 122px;
+	flex: 1;
+	max-width: 50%;
 	h1 {
-		font-family: 'Marck Script', cursive;
-		font-size: 38px;
-		margin-bottom: 30px;
-		text-align: start;
-		padding: 11px;
-		color: #6b0a0a;
-
+		font-size: 30px;
+		font-family: "Marck Script", cursive;
 	  }
 	  
 	  p {
-		font-family: sans-serif;
-		font-size: 20px;
+		font-size: 18px;
 	  }
   }
+  
+  .contactanos-contacto{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	
+	
+  }
+
   
   
 
@@ -766,39 +767,18 @@
 
 
 	.container-nuevo {
-		display: flex;
 		flex-direction: column;
-		align-items: center;
-		background-color: rgb(240, 232, 232);
-		margin: 20px;
 	  }
-	  
+	
 	  .imagen-nuestros {
-		width: 100%;
-		text-align: center;
-		
-		img {
-		  max-width: 100%;
-		  height: auto;
-		}
+		max-width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
 	  }
-	  
-	  .content p {
-		font-size: 15px;}
-
-
+	
 	  .content {
-		width: 100%;
-		padding: 20px;
-	  }
-	  
-	  h1 {
-		font-family: 'Marck Script', cursive;
-		font-size: 38px;
-		margin-bottom: 30px;
-		text-align: start;
-		padding: 11px;
-		color: #6b0a0a;
+		max-width: 100%;
+		text-align: center;
 	  }
 	  
 	 
@@ -806,13 +786,16 @@
 	  .info-nuestros {
 		text-align: center;
 		font-size: 200%;
-		color: rgb(255, 255, 255);
+		
 		font-family: 'Montserrat', sans-serif;
-		background-color: black;
+		background-color: rgb(231, 218, 218);
 		
 		a {
-		  color: rgb(255, 255, 255);
+		  color: rgb(0, 0, 0);
 		  text-decoration: none;
+		  font-size: 25px;
+		
+		  
 		}
 	  }
 	  
@@ -821,29 +804,7 @@
 		transition: all 2s;
 	  }
 	  
-	  .grid-contenedor2 {
-		display: flex;
-		flex-direction: column; 
-		gap: 20px;
-		background-color: #ece4e1;
-		margin: 20px;
 	  
-		.grid-item1 {
-		  border: solid;
-		  border-width: 1px;
-		  padding: 3%;
-	  
-		  .item-encabezado {
-			background-color: rgb(205, 178, 178);
-			font-size: 23px;
-		  }
-	  
-		  p {
-			padding: 6px;
-			font-size: 15px;
-		  }
-		}
-	  }
 
 	
 .todoservicios {
@@ -1207,6 +1168,10 @@ $primary-color: #333;
     height: auto;
 	margin:50px auto 0;
 	overflow: hidden;
+	animation: backInLeft; 
+	animation-duration: 2s; 
+
+
 	ul {
 		display: flex;
 		padding: 0;
@@ -1259,6 +1224,7 @@ $primary-color: #333;
 	gap: 30px;
 	
 	}
+	
 
 	.card-cursos-nuevo{
 		position: relative;
@@ -1272,8 +1238,10 @@ $primary-color: #333;
 			backface-visibility: hidden;
 			border-radius: 10px;
 			overflow: hidden;
-			transition: .5s;
+			transition: 1.2s;
 		}
+
+
 			
 		.card-cursos-nuevo .front{
 				transform: perspective(600px) rotateY(0deg);
@@ -1420,6 +1388,10 @@ h2{
 }
 
 }
+
+
+
+
 @media (max-width: 768px) {
 
 
@@ -1455,13 +1427,6 @@ h2{
 		font-family: 'Josefin Sans', sans-serif;
 	}
 }
-
-
-
-
-
-
-/* a partir de aca DEJANOS TU CONSULTA */
 
 .contenedor-acordeon{
     width: 93%;
