@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Probando-sass"
+		"liveServer.settings.multiRootWorkspaceName": "Probando-sass",
+		"liveServer.settings.port": 5501
 	}
 }
